@@ -9,7 +9,6 @@ and to write the results to a .csv file.
 I also want to be able to pick up where I left off.
 
 Ideally:
-
 when the code is run, it opens a file containing the 
 remaining tweet data that hasn't been classified yet. 
 It then outputs csv'd tweets and user-specified 
