@@ -21,7 +21,7 @@ class StreamWatcherListener(tweepy.StreamListener):
         try:
             print self.status_wrapper.fill(status.text)
             print '\n %s  %s  via %s\n' % (status.author.screen_name, status.created_at, status.source)
-            f = open('tweetdump.txt', 'a')
+            f = open('tweetdump27.txt', 'a')
             f.write(status.text.replace('\n', ' '))
             f.write("\n")
             f.close()
