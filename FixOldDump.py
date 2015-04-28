@@ -6,7 +6,7 @@
 tweet_count = 0
 bad_count = 0
 
-with open('tweetdump_old.txt') as f:
+with open('tweetdump27.txt') as f:
 	tweets = f.readlines()
 
 terms = ['#qanda', '#QandA', '@QandA', '@qanda', 'qanda', 'QandA', 'Qanda', '#Qanda', '@Qanda', '#QANDA']
@@ -39,7 +39,7 @@ for tweet in tweets:
 
 print tweet_count, bad_count
 
-with open('tweetdump_new.txt','wb') as f:
+with open('tweetdump27_new.txt','wb') as f:
 	for tweet in tweets:
 		if not IsBad(tweet):
 			f.write(tweet)

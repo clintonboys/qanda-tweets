@@ -7,11 +7,11 @@ import numpy as np
 frame = pd.read_csv('twitter_sentiment_list.csv',skiprows=0,delim_whitespace=False,header=0,names=['term','pos','neg'])
 frame.index = frame['term']
 
-with open('left_list.txt', 'rb') as f:
+with open('LeftList.txt', 'rb') as f:
 	reader = csv.reader(f)
 	left_list = list(reader)[0]
 
-with open('right_list.txt', 'rb') as f:
+with open('RightList.txt', 'rb') as f:
 	reader = csv.reader(f)
 	right_list = list(reader)[0]
 
